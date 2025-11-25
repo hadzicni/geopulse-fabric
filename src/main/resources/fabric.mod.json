@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "geopulse",
+  "version": "${version}",
+
+  "name": "GeoPulse",
+  "description": "Environmental Danger & Ore Heatmap HUD",
+  "authors": [
+    "Nikola Hadzic"
+  ],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/geopulse/icon.png",
+
+  "environment": "*",
+
+  "entrypoints": {
+    "main": [
+      "org.hadzicni.geopulse.Geopulse"
+    ],
+    "client": [
+      "org.hadzicni.geopulse.client.GeopulseClient"
+    ]
+  },
+
+  "mixins": [],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
